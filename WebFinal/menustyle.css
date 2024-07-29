@@ -1,0 +1,370 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Open+Sans:wght@300&family=Oswald:wght@200&display=swap');
+
+
+body{
+    background-image: url("images/menubg.png");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.logo img{ 
+  height: 100px;
+  width: 100px;
+  float:left;
+  margin-bottom: 3%;
+}
+
+.nav{
+  margin-right: 21px;
+  font-family: 'Alegreya Sans SC';
+}
+
+.nav ul{
+  text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+
+.nav li{
+  margin-left: 10px;
+  display: flex;
+  padding: auto;
+  text-align: center;
+  transition: .05s;
+  margin-right: 10px;
+}
+
+.dropbtn {
+  font-size: 20px;
+  border-radius: 25px;
+  padding: 5px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  margin-top:1px; 
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  right: 0; 
+  white-space: nowrap;
+  margin-top: 1px; 
+  z-index: 9999;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  background-color: #201f1f;
+  transition: 0.2s;
+}
+
+.dropdown-content a:hover {
+  background-color: #c30010;
+  font-size: 17px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown img{
+  width: 50px;
+  height: 50px;
+  transition: 0.2s;
+}
+
+.profile-icon {
+  width: 50px;
+  height: 50px;
+  transition: 0.2s;
+}
+
+.notactivepage{
+  margin-top: 5px;
+  font-size: 20px;
+  border-radius: 25px;
+  padding: 5px 35px;    
+  transition: .08s;
+  background-color: #201f1f;
+  font-family: 'Alegreya Sans SC';
+}
+
+.activepage{
+  margin-top: 5px;
+  font-size: 20px;
+  border-radius: 25px;
+  padding: 5px 45px;
+  cursor: pointer;
+  background-color: #c30010;
+  font-family: 'Alegreya Sans SC';
+}
+
+.notactivepage:hover{
+  font-size: 20px;
+  border-radius: 25px;
+  padding: 5px 45px;
+  cursor: pointer;
+  background-color: #c30010;
+}
+
+.nav a{
+  text-decoration: none;
+  color: white;
+}
+
+.title{
+  float:left;
+  width: 500px;
+  font-size: 40px;
+  margin-left: 40px;
+  text-decoration: none;
+  color: #A62424;
+  font-family: 'Alegreya Sans SC';
+}
+
+.title a{
+  color:black;
+}
+
+.container{
+    background-image: url("images/background.png");
+    border: 4px solid #A62424;
+    border-radius: 5px;
+    width: 90%;
+    position: relative;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    padding: 10px;
+    margin-top: 30px;
+    
+}
+
+.container .proceed{
+  float:right;
+  margin-right: 5%;
+  border: 2px solid black;
+  text-decoration: none;
+  background-color: black;
+  font-size: 20px;
+  border-radius: 25px;
+  padding: 5px 35px;    
+  transition: .08s;
+  background-color: #201f1f;
+  font-family: 'Alegreya Sans SC';
+  cursor: pointer;
+  color:white;
+  position: absolute;
+  bottom: 45px; 
+  right: 10px;
+}
+
+.container .back{
+  float:right;
+  margin-right: 5%;
+  border: 2px solid black;
+  text-decoration: none;
+  background-color: black;
+  font-size: 20px;
+  border-radius: 25px;
+  padding: 5px 35px;    
+  transition: .08s;
+  background-color: #201f1f;
+  font-family: 'Alegreya Sans SC';
+  cursor: pointer;
+  color:white;
+  position: absolute;
+  bottom: 45px;
+  
+}
+
+.container .proceed:hover, .back:hover{
+  font-size: 20px;
+  border-radius: 25px;
+  padding: 5px 45px;
+  cursor: pointer;
+  background-color: #c30010;
+  font-family: 'Alegreya Sans SC';
+
+}
+
+
+h3{
+    color:#494543;
+    font-family: 'Alegreya Sans SC';
+    text-align: center;
+    font-size: 30px;
+    letter-spacing: 2px;
+}
+
+span{
+    color:#A62424;
+}
+
+h1{
+    color:#494543;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    font-size: 60px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    letter-spacing: 15px;
+    margin-top: -30px;
+}
+
+p{
+    text-align: justify;
+    color:#A62424;
+}
+
+.quantity{
+  float:right;
+  margin-top: -25px;
+  padding: 10px;
+  width: 50px;
+}
+
+input[type=number]::-webkit-inner-spin-button {
+  opacity: 1;
+}
+
+.price{
+  font-size:25px;
+  height: 0;
+  width: 300px;
+}
+
+.menupages{
+    text-align: center;
+    margin-top: -20px;
+    margin-left: 50px;
+    transition: transform 0.3s ease;
+}
+
+.menulinks:hover, .menulinks.active {
+    transform: scale(1.1);
+    transition: 0.3s;
+    color:#494543;
+}
+
+.menupages button, .see-more-btn {
+    background: none;
+    border: none;
+    margin-right: 100px;
+    text-decoration: none;
+    text-align: center;
+    color: #A62424;
+    font-family: 'Dancing Script', cursive;
+    font-size: 50px;
+    cursor: pointer;
+}
+
+.addons{
+    margin-right: 0;
+}
+
+
+.gridcontainer {
+  display: grid;
+  width: 90%;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 20px; 
+  margin:auto;
+}
+
+.grid-item {
+  display: flex;
+  align-items: center;
+  border: 2px solid black;  
+  
+}
+.grid-item.active {
+    display: grid;
+}
+
+
+
+.description{
+  flex-basis: 60%;
+  padding: 20px;
+  font-family: 'Oswald', sans-serif;
+  color: black;
+  font-weight: 20px;
+  text-align: left;
+  margin-top: -10px;
+  
+}
+
+.image {
+    flex-basis: 50%;
+    height: 240px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+   
+  }
+  
+  .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .see-more {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    margin-left: 90px;
+    text-align: center;
+  }
+
+  .see-more-btn:hover{
+    color:#494543;
+    transition: 0.3s;
+  }
+
+
+.schedule button{ 
+	border:solid;
+	padding: 10px 30px;
+  border-radius: 40px;
+  border: none;
+  float:left;
+  width:30;
+  background: #201f1f;
+  color: white;
+  font-family: 'Alegreya Sans SC';
+  letter-spacing: 2px;
+	transition: 0.2s;
+	margin:auto;
+}
+
+.schedule button:hover{
+  cursor: pointer;
+	transform: scale(1.1);
+}
+.schedule a {
+  text-decoration: none;
+  color:white;
+}
+
+   
